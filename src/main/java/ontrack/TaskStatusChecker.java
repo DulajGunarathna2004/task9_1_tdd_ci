@@ -15,7 +15,7 @@ public class TaskStatusChecker {
         tasks.put("task9.1", "TDD and CI,Pending Review,Waiting for tutor feedback");
         tasks.put("task8.1", "Unit Testing,Completed,Good work");
 
-        studentTasks.put("s224971693", tasks);
+        studentTasks.put("224971693", tasks);
     }
 
     public String getTaskStatus(String studentId, String taskId) {

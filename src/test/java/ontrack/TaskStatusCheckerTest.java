@@ -9,7 +9,7 @@ public class TaskStatusCheckerTest {
     public void testPendingReviewTaskStatus() {
         TaskStatusChecker checker = new TaskStatusChecker();
 
-        String result = checker.getTaskStatus("s225098078", "task9.1");
+        String result = checker.getTaskStatus("224971693", "task9.1");
 
         String expected = "Task: TDD and CI\n" +
                           "Status: Pending Review\n" +
@@ -22,7 +22,7 @@ public class TaskStatusCheckerTest {
     public void testCompletedTaskStatus() {
         TaskStatusChecker checker = new TaskStatusChecker();
 
-        String result = checker.getTaskStatus("s225098078", "task8.1");
+        String result = checker.getTaskStatus("224971693", "task8.1");
 
         String expected = "Task: Unit Testing\n" +
                           "Status: Completed\n" +
@@ -35,7 +35,7 @@ public class TaskStatusCheckerTest {
     public void testUnknownTask() {
         TaskStatusChecker checker = new TaskStatusChecker();
 
-        String result = checker.getTaskStatus("s225098078", "task1.1");
+        String result = checker.getTaskStatus("224971693", "task1.1");
 
         assertEquals("Task not found", result);
     }
